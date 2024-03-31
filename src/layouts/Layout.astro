@@ -5,28 +5,35 @@ interface Props {
 }
 
 const { title } = Astro.props;
+const description =
+  "20 years of crafting an elevated level of brands, web design and development.";
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="20 years of crafting an elevated level of branding, web design and development."
-    />
+    <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#da532c" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#da532c" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#73fab4" />
+    <meta name="msapplication-TileColor" content="#73fab4" />
+    <meta name="theme-color" content="#73fab4" />
     <!-- Sitemap -->
     <link rel="sitemap" href="/sitemap-index.xml" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hoverboardmedia.com" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta
+      property="og:image"
+      content="https://hoverboardmedia.com/images/og-image.png"
+    />
   </head>
   <body>
     <a href="#main" class="sr-only sr-only-focusable">Skip to content</a>
