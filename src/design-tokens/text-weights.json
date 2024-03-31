@@ -4,16 +4,36 @@
   "meta": {},
   "items": [
     {
-      "name": "Regular",
-      "value": 400
+      "name": "Ultra Light",
+      "value": 50
+    },
+    {
+      "name": "Light",
+      "value": 100
+    },
+    {
+      "name": "Normal",
+      "value": 200
     },
     {
       "name": "Medium",
-      "value": 500
+      "value": 300
+    },
+    {
+      "name": "SemiBold",
+      "value": 400
     },
     {
       "name": "Bold",
+      "value": 500
+    },
+    {
+      "name": "ExtraBold",
       "value": 700
+    },
+    {
+      "name": "Black",
+      "value": 900
     }
   ]
 }

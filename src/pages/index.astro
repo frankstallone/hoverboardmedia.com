@@ -1,18 +1,181 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Picture } from "astro:assets";
+
+import amazingWork from "../assets/hackettstown-nj-single-page-marketing-site-limited-availability-transparent@2x.png";
+import headshot from "../assets/headshot-01.jpg";
 ---
 
-<Layout title="Welcome to Astro.">
-  <article class="wrapper flow">
-    <h1>CUBE CSS core setup</h1>
-    <div class="switcher">
-      <h2 class="text-primary">A heading and paragraph in two columns</h2>
-      <p>
-        Donec sed odio dui. Donec sed odio dui. Vivamus sagittis lacus vel augue
-        laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue
-        laoreet rutrum faucibus dolor auctor. Praesent commodo cursus magna, vel
-        scelerisque nisl consectetur et.
-      </p>
+<Layout
+  title="Hoverboard Media // 20 years of elevated branding and web design"
+>
+  <div
+    id="hero"
+    class="bg-gradient bg-gradient-to-tr from-mint-vivid-300 to-blue-vivid-200 text-mint-vivid-900"
+  >
+    <header
+      class="cluster box text-center justify-between bg-transparent text-white"
+    >
+      <a
+        href="/"
+        class="flex-justify-center items-center text-mint-900 hover:text-mint-vivid-800 transition duration-300 ease-in-out"
+      >
+        <svg
+          viewBox="0 0 40 40"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-l h-auto"
+        >
+          <title>Hoverboard Media logo</title>
+          <path
+            id="ring"
+            fill="currentColor"
+            d="M25.958,36.376c-9.025,3.291 -19.003,-1.372 -22.288,-10.416c-3.284,-9.045 1.368,-19.045 10.393,-22.337c9.024,-3.292 19.001,1.373 22.286,10.416c3.285,9.044 -1.368,19.046 -10.391,22.337m13.174,-18.123l0.23,-3.349l-1.871,-2.785l-0.867,-3.242l-2.672,-2.024l-1.871,-2.784l-3.183,-1.045l-2.671,-2.026l-3.349,0.048l-3.183,-1.046l-3.152,1.134l-3.348,0.048l-2.614,2.098l-3.153,1.134l-1.792,2.836l-2.614,2.099l-0.776,3.265l-1.793,2.836l0.324,3.34l-0.777,3.266l1.388,3.055l0.323,3.34l2.303,2.437l1.388,3.056l2.968,1.556l2.302,2.437l3.312,0.507l2.966,1.556l3.296,-0.599l3.311,0.506l2.923,-1.638l3.295,-0.599l2.234,-2.501l2.922,-1.639l1.303,-3.093l2.234,-2.501l0.229,-3.349l1.303,-3.093l-0.868,-3.241Z"
+          ></path>
+          <g id="hm">
+            <path
+              id="left"
+              fill="currentColor"
+              d="M23.662,17.157c-1.188,0.433 -1.854,1.088 -2.342,1.708c0.206,0.417 0.38,0.822 0.556,1.307l2.918,8.035l-0.037,0.014l-2.675,0.976l-0.038,0.013l-3.023,-8.325c-0.45,-1.238 -1.282,-1.568 -2.566,-1.099c-1.259,0.458 -2.007,1.118 -2.529,1.721l3.421,9.416l-2.713,0.99l-7.545,-20.775c-2.749,4.034 -3.588,9.289 -1.793,14.229c2.957,8.146 11.943,12.345 20.07,9.381c2.082,-0.759 3.903,-1.917 5.415,-3.353l-4.835,-13.312c-0.415,-1.141 -1.218,-1.315 -2.284,-0.926"
+            ></path>
+            <path
+              id="right"
+              fill="currentColor"
+              d="M14.654,5.251c-2.082,0.76 -3.903,1.917 -5.414,3.354l3.919,10.789c0.742,-0.903 1.684,-1.631 2.919,-2.081c0.072,-0.026 0.138,-0.045 0.208,-0.07l-0.001,-0.006c1.273,-0.464 2.243,-0.494 2.981,-0.213c0.21,0.065 0.407,0.149 0.592,0.254c0.809,-1.156 2.087,-2.106 3.402,-2.586c2.858,-1.042 4.561,0.096 5.397,2.402l4.274,11.767c2.749,-4.034 3.588,-9.289 1.794,-14.229c-2.958,-8.144 -11.944,-12.346 -20.071,-9.381"
+            ></path>
+          </g>
+        </svg>
+      </a>
+    </header>
+    <div
+      class="box flex flex-col justify-center flow prose bg-transparent"
+      id="main"
+    >
+      <h1 class="text-step-5">Hackettstown Limited Offer</h1>
+      <h2>
+        Get your small business a high quality single-page marketing website for
+        $500, live in a few days.
+      </h2>
+      <h3>No contacts, no BS, just an excellent website.</h3>
+      <Picture
+        src={amazingWork}
+        widths={[300, 800, 2000, amazingWork.width]}
+        sizes={`(max-width: 300px) 300px, (max-width: 800px) 800px, (max-width: 1600px) 2000px, ${amazingWork.width}px`}
+        pictureAttributes={{
+          class: "object-contain h-full w-full",
+        }}
+        class={"object-contain h-full w-full"}
+        alt="High quality landing pages for my clients"
+        formats={["avif", "webp"]}
+        loading="lazy"
+      />
     </div>
+  </div>
+  <article>
+    <section>
+      <div class="grid" data-layout="50-50" style="--gutter: 0;">
+        <div
+          class="box flex flex-col justify-center items-center bg-blue-900 text-blue-vivid-100 region"
+        >
+          <h2 class="mt-zero self-start">What's the catch?</h2>
+          <ul>
+            <li>
+              This is for our community. Hackettstown and nearby towns only
+            </li>
+            <li>
+              There is limited availability. I'll only be doing this for four
+              businesses
+            </li>
+            <li>
+              This is a limited time offer. I'll only be accepting applicants
+              from 1/31 until 4/6
+            </li>
+            <li>
+              Hosting for one year. After that, it's $5 a month, or $50 a year
+            </li>
+            <li>I'm only accepting credit card payments</li>
+          </ul>
+        </div>
+        <div
+          class="box flex flex-col justify-center items-center bg-indigo-900 text-indigo-vivid-100 region"
+        >
+          <h2 class="mt-zero self-start">What will I get?</h2>
+          <ul>
+            <li>
+              A fully custom single-page website. Not some cookie cutter
+              template
+            </li>
+            <li>
+              Distinct call to action via phone number, contact form, or Stripe
+              payment links
+            </li>
+            <li>
+              Documentation. Everything we do will be neatly documented for your
+              records
+            </li>
+            <li>Full access to the design, and code</li>
+            <li>Premium stock photography</li>
+            <li>A website that is fast.</li>
+            <li>A website that is accessible</li>
+            <li>A website that will stand the test of time</li>
+            <li>A website that will look good on any device</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section
+      class="bg-gradient bg-gradient-to-tr from-magenta-vivid-100 to-gold-vivid-200"
+    >
+      <div class="region wrapper">
+        <div class="flex flex-col md:grid" data-layout="twelfths">
+          <div
+            class="md:row-start-1 md:row-span-8 md:col-start-1 md:col-span-6 z-10"
+          >
+            <div class="box flow prose bg-orange-vivid-900 text-orange-200">
+              <h2 class="mt-zero">Why are you doing this?</h2>
+              <p>
+                I started my career working at small businesses. I have an
+                affinity for them, and love talking to owners about their
+                business. After working in agencies, enterprise, and start ups —
+                I left it all to start my own. As I am building that out, I have
+                some time. What better to do than give that back?
+              </p>
+              <p>
+                There are a few things I've learned throughout the decades of
+                working on the web, but one thing remains. Highly performant,
+                inclusive, and timeless designs attract the right audience. I
+                build top shelf websites, fast.
+              </p>
+              <p>
+                If you are interested, or you know someone who might be
+                interested, send them this page, <a
+                  href="https://forms.gle/tS7ajY7G5kkHSuQM8"
+                  >and fill out this enrollment form</a
+                >.
+              </p>
+              <p>
+                Questions? Feel free to ask on this thread or send me a message.
+              </p>
+            </div>
+          </div>
+          <div
+            class="md:row-start-2 md:row-span-6 md:col-start-6 md:col-span-6"
+          >
+            <Picture
+              src={headshot}
+              alt="Frank Stallone"
+              widths={[240, 540, 720, headshot.width]}
+              sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${headshot.width}px`}
+              height={1664}
+              width={1664}
+              class="object-contain h-auto"
+              format="avif"
+              loading="eager"
+              decoding="sync"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
   </article>
 </Layout>

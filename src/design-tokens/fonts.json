@@ -4,8 +4,17 @@
   "items": [
     {
       "name": "Base",
-      "description": "System fonts for body copy and globally set text.",
-      "value": ["Inter", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif"]
+      "description": "Fonts for body copy and globally set text.",
+      "value": [
+        "Aspekta",
+        "ui-sans-serif",
+        "system-ui",
+        "sans-serif",
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        "Noto Color Emoji"
+      ]
     }
   ]
 }

@@ -1,0 +1,19 @@
+{
+    "name": "Hoverboard Media",
+    "short_name": "Hoverboard Media",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#73fab4",
+    "background_color": "#73fab4",
+    "display": "standalone"
+}

@@ -5,9 +5,83 @@
   project: https://cube.fyi/css.html
 */
 body {
-  background: var(--color-light);
-  color: var(--color-dark);
+  color: var(--color-gray-1400);
   font-size: var(--size-step-0);
   font-family: var(--font-base);
+  font-weight: var(--font-medium);
   line-height: var(--leading-standard);
+  margin: 0;
+}
+
+h1 {
+  font-weight: var(--font-bold);
+}
+
+h2, h3, h4, h5, h6 {
+  font-weight: var(--font-semibold);
+}
+
+
+/* Baseline for default links */
+a {
+  text-decoration: underline;
+  color: var(--color-gray-1400);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:not([class]) {
+  /* Relatively sized thickness and offset */
+  text-decoration-thickness: max(0.08em, 1px);
+  text-underline-offset: 0.15em;
+}
+
+p,
+li,
+blockquote:not([class]) {
+  max-inline-size: 50ch;
+}
+blockquote:not([class]) {
+  font-size: var(--size-step-2);
+  margin-inline-start: 0;
+  padding-inline-start: var(--space-xs-s);
+  border-left: max(0.08em, 1px) solid var(--color-gray-1400);
+}
+
+svg {
+  height: 0.8lh;
+  width: auto;
+  flex: none;
+}
+
+
+
+/* Scroll padding allowance below focused elements 
+  to ensure they are clearly in view */
+  :focus {
+    scroll-padding-block-end: 8vh;
+  }
+  
+  :focus-visible {
+    --outline-size: max(2px, 0.15em);
+  
+    outline: var(--outline-width, var(--outline-size)) var(--outline-style, solid)
+      var(--outline-color, currentColor);
+    outline-offset: var(--outline-offset, var(--outline-size));
+  }
+  
+  /* Scroll padding allowance above anchor links */
+  :target {
+    scroll-padding-block-start: 2rem;
+  }
+  
+  main:focus {
+    outline: none;
+  }
+  
+
+[role='list'] {
+  padding: 0;
 }
