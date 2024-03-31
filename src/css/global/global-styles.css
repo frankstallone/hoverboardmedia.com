@@ -85,3 +85,37 @@ svg {
 [role='list'] {
   padding: 0;
 }
+
+@layer components {
+  /* Button */
+  
+  .button {
+    display: block;
+    max-width: fit-content;
+    color: var(--color-blue-1000);
+    background-color: var(--color-blue-vivid-300);
+    border: solid 5px var(--color-blue-vivid-800);
+    letter-spacing: -0.025em;
+    font-size: var(--size-step-1);
+    font-weight: var(--font-extrabold);
+    padding-block-start: var(--space-xs);
+    padding-block-end: var(--space-xs);
+    padding-inline-start: var(--space-xl);
+    padding-inline-end: var(--space-xl);
+    text-decoration: none;
+    text-align: center;
+  }
+  .button:hover {
+    background-color: var(--color-blue-vivid-400);
+    color: var(--color-blue-1000);
+    border: solid 5px var(--color-blue-vivid-900);
+  }
+  .button:disabled {
+    background-color: var(--color-gray-300);
+    color: var(--color-gray-700);
+  }
+  .button:disabled:hover {
+    background-color: var(--color-gray-400);
+    color: var(--color-gray-800);
+  }
+}
