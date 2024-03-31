@@ -4,7 +4,7 @@ import { Picture } from "astro:assets";
 
 const date = new Date().getFullYear();
 
-import amazingWork from "../assets/hackettstown-nj-single-page-marketing-site-limited-availability-transparent@2x.png";
+import amazingWork from "../assets/hackettstown-nj-single-page-marketing-site-limited-availability-transparent-v2@2x.png";
 import headshot from "../assets/headshot-01.jpg";
 ---
 
@@ -69,7 +69,8 @@ import headshot from "../assets/headshot-01.jpg";
         class={"object-contain h-full w-full"}
         alt="High quality landing pages for my clients"
         formats={["avif", "webp"]}
-        loading="lazy"
+        decoding="sync"
+        loading="eager"
       />
       <a href="https://forms.gle/tS7ajY7G5kkHSuQM8" class="button mx-auto mb-l"
         >Fill out enrollment form</a
@@ -202,7 +203,9 @@ import headshot from "../assets/headshot-01.jpg";
       </div>
     </section>
   </article>
-  <footer class="relative z-10 overflow-clip bg-gray-1300 text-gray-500">
+  <footer
+    class="relative z-10 overflow-clip bg-gradient bg-gradient-to-br from-magenta-vivid-100 to-gold-vivid-200 text-gold-vivid-800"
+  >
     <section class="region wrapper flow z-10 relative">
       <ul role="list" class="grid" data-layout="50-50">
         <li class="flex flex-col flow items-center justify-end">
