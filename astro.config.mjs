@@ -7,5 +7,9 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
   integrations: [tailwind({
     applyBaseStyles: false
-  }), partytown(), sitemap()]
+  }), partytown({
+    config: {
+      forward: ['dataLayer.push'],
+    },
+  }), sitemap()]
 });
