@@ -258,6 +258,7 @@ import headshot from "../assets/headshot-01.jpg";
       </div>
     </section>
     <section
+      id="contact"
       class="bg-gradient bg-gradient-to-tr from-magenta-vivid-100 to-gold-vivid-100"
     >
       <div class="center region">
@@ -273,7 +274,7 @@ import headshot from "../assets/headshot-01.jpg";
             class="switcher"
             method="POST"
             data-netlify="true"
-            action="/"
+            action="/#contact"
           >
             <input
               type="hidden"
@@ -332,6 +333,7 @@ import headshot from "../assets/headshot-01.jpg";
             </span>
             <button
               type="submit"
+              id="formSubmit"
               class="button bg-blue-300 text-blue-900 hover:bg-blue-400 min-w-full"
               >Submit</button
             >
@@ -409,5 +411,12 @@ import headshot from "../assets/headshot-01.jpg";
     typeSpeed: 50,
     backSpeed: 40,
     backDelay: 2000,
+  });
+
+  const formButton = document.getElementById("formSubmit") as HTMLButtonElement;
+  formButton.addEventListener("click", function () {
+    formButton.innerHTML = "Thank you for your submission";
+    // Add disabled attribute to form button
+    formButton.setAttribute("disabled", "disabled");
   });
 </script>
