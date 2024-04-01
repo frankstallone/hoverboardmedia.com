@@ -7,6 +7,7 @@ const date = new Date().getFullYear();
 import amazingWork01 from "../assets/hackettstown-nj-single-page-marketing-site-limited-availability-01.png";
 import amazingWork02 from "../assets/hackettstown-nj-single-page-marketing-site-limited-availability-04.png";
 import amazingWork03 from "../assets/hackettstown-nj-single-page-marketing-site-limited-availability-05.png";
+import caseStudy from "../assets/hackettstown-nj-single-page-marketing-site-limited-availability-case-study-01.png";
 import headshot from "../assets/headshot-01.jpg";
 ---
 
@@ -183,6 +184,50 @@ import headshot from "../assets/headshot-01.jpg";
             <li>Full access to the design, and code.</li>
             <li>Premium stock photography.</li>
           </ul>
+        </div>
+      </div>
+    </section>
+    <section class="flow prose bg-magenta-100 region">
+      <h2 class="mt-zero wrapper uppercase tracking-tighter font-extrabold">
+        Case Study
+      </h2>
+      <div class="flex flex-col flow md:grid" data-layout="twelfths">
+        <Picture
+          src={caseStudy}
+          widths={[300, 800, 2000, caseStudy.width]}
+          sizes={`(max-width: 300px) 300px, (max-width: 800px) 800px, (max-width: 1600px) 2000px, ${caseStudy.width}px`}
+          pictureAttributes={{
+            class:
+              "object-contain h-full w-full md:row-start-1 md:row-span-10 md:col-start-7 md:col-span-6 z-10",
+          }}
+          class={"object-contain h-full w-full md:row-start-1 md:row-span-10 md:col-start-7 md:col-span-6 z-10"}
+          alt="Local area franchisee website design"
+          formats={["avif", "webp"]}
+          loading="lazy"
+        />
+        <div
+          class="md:row-start-3 md:row-span-4 md:col-start-1 md:col-span-8 lg:col-start-2 lg:row-start-3 lg:row-span-4 lg:col-span-7"
+        >
+          <div
+            class="box prose flow bg-white border-solid border-8 border-magenta-200 md:pr-4xl"
+          >
+            <h3 class="mt-zero uppercase tracking-tighter font-extrabold">
+              Ice Cream Plano
+            </h3>
+            <p>
+              A franchisee reached out to us looking to bring in more customers.
+              We built a quick website using the existing photography, and brand
+              collatoral. The aim was for this single-page website to draw in
+              the local area crowd interested in ice cream.
+            </p>
+            <p>
+              In just a few days this page was live. We had a coupon code to
+              track who came to the site, and talked about how fantastic the
+              product was just around the corner. We included product
+              information, without prices, then presented a distinct call to
+              action.
+            </p>
+          </div>
         </div>
       </div>
     </section>

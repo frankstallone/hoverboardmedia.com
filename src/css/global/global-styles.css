@@ -107,6 +107,10 @@ svg {
   padding: 0;
 }
 
+ul, ol {
+  padding-inline-start: var(--space-s);
+}
+
 @layer components {
   /* Button */
   
