@@ -18,12 +18,14 @@ Reference source: https://github.com/Set-Creative-Studio/cube-boilerplate/blob/m
 
 @import 'blocks/prose.css' layer(components);
 @import 'components/box.css' layer(components);
+@import 'components/center.css' layer(components);
 @import 'components/cluster.css' layer(components);
 @import 'components/flow.css' layer(components);
 @import 'components/grid.css' layer(components);
 @import 'components/icon.css' layer(components);
 @import 'components/repel.css' layer(components);
 @import 'components/sidebar.css' layer(components);
+@import 'components/stack.css' layer(components);
 @import 'components/switcher.css' layer(components);
 @import 'components/wrapper.css' layer(components);
 @import 'utilities/region.css' layer(components);
