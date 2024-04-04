@@ -14,11 +14,11 @@ import headshot from "../assets/headshot-01.jpg";
 <Layout
   title="Hoverboard Media // 20 years of elevated branding and web design"
 >
-  <div
+  <header
     id="hero"
     class="bg-gradient bg-gradient-to-tr from-mint-vivid-300 to-blue-vivid-200 text-mint-vivid-900"
   >
-    <header
+    <nav
       class="cluster box text-center justify-between bg-transparent text-white"
     >
       <a
@@ -51,7 +51,7 @@ import headshot from "../assets/headshot-01.jpg";
           </g>
         </svg>
       </a>
-    </header>
+    </nav>
     <div class="wrapper flex flex-col justify-center bg-transparent" id="main">
       <h1
         class="uppercase tracking-tighter text-step-3 sm:text-step-4 font-extrabold md:text-[5.5vw] md:text-nowrap"
@@ -128,7 +128,7 @@ import headshot from "../assets/headshot-01.jpg";
         loading="eager"
       />
     </div>
-  </div>
+  </header>
   <article>
     <section>
       <div class="grid" data-layout="50-50" style="--gutter: 0;">
@@ -355,6 +355,7 @@ import headshot from "../assets/headshot-01.jpg";
                 name="name"
                 type="text"
                 required
+                aria-required=""
                 class="border-gray-700 border-1 border-solid"
               />
             </span>
@@ -366,6 +367,7 @@ import headshot from "../assets/headshot-01.jpg";
                 name="email"
                 type="email"
                 required
+                aria-required=""
                 class="border-gray-700 border-1 border-solid"
               />
             </span>
@@ -387,6 +389,7 @@ import headshot from "../assets/headshot-01.jpg";
                 class="text-blue-1000"
                 rows="6"
                 required
+                aria-required="true"
                 class="border-gray-700 border-1 border-solid"></textarea>
             </span>
             <button
