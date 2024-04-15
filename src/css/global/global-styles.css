@@ -13,11 +13,28 @@ body {
   margin: 0;
 }
 
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: var(--font-bold);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--font-black);
 }
 
+h2 {
+  font-size: var(--size-step-4);
+}
+
+h3 {
+  font-size: var(--size-step-3);
+}
+
+h4,
+h5,
+h6 {
+  font-size: var(--size-step-2);
+}
 
 /* Baseline for default links */
 a {
@@ -47,7 +64,6 @@ blockquote:not([class]) {
   border-left: max(0.08em, 1px) solid var(--color-gray-1400);
 }
 
-
 form > p {
   display: flex;
   flex-flow: column nowrap;
@@ -70,77 +86,40 @@ textarea:focus {
   outline: 2px solid var(--gray-11);
 }
 
-
 svg {
   height: 0.8lh;
   width: auto;
   flex: none;
 }
 
-
-
 /* Scroll padding allowance below focused elements 
   to ensure they are clearly in view */
-  :focus {
-    scroll-padding-block-end: 8vh;
-  }
-  
-  :focus-visible {
-    --outline-size: max(2px, 0.15em);
-  
-    outline: var(--outline-width, var(--outline-size)) var(--outline-style, solid)
-      var(--outline-color, currentColor);
-    outline-offset: var(--outline-offset, var(--outline-size));
-  }
-  
-  /* Scroll padding allowance above anchor links */
-  :target {
-    scroll-padding-block-start: 2rem;
-  }
-  
-  main:focus {
-    outline: none;
-  }
-  
+:focus {
+  scroll-padding-block-end: 8vh;
+}
+
+:focus-visible {
+  --outline-size: max(2px, 0.15em);
+
+  outline: var(--outline-width, var(--outline-size)) var(--outline-style, solid)
+    var(--outline-color, currentColor);
+  outline-offset: var(--outline-offset, var(--outline-size));
+}
+
+/* Scroll padding allowance above anchor links */
+:target {
+  scroll-padding-block-start: 2rem;
+}
+
+main:focus {
+  outline: none;
+}
 
 [role='list'] {
   padding: 0;
 }
 
-ul, ol {
+ul,
+ol {
   padding-inline-start: var(--space-s);
-}
-
-@layer components {
-  /* Button */
-  
-  .button {
-    display: block;
-    max-width: fit-content;
-    color: var(--color-blue-200);
-    background-color: var(--color-blue-vivid-800);
-    border: 2px solid var(--color-blue-vivid-900);
-    font-size: var(--size-step-1);
-    font-weight: var(--font-bold);
-    padding-block-start: var(--space-xs);
-    padding-block-end: var(--space-xs);
-    padding-inline-start: var(--space-xl);
-    padding-inline-end: var(--space-xl);
-    text-decoration: none;
-    text-align: center;
-    border-radius: 9999px;
-    box-shadow: 0 8px 0 0 var(--color-blue-vivid-900);
-    transition: box-shadow 0.2s;
-  }
-  .button:hover {
-    box-shadow: 0 0 0 0 var(--color-blue-vivid-900);
-  }
-  .button:disabled {
-    background-color: var(--color-gray-300);
-    color: var(--color-gray-700);
-  }
-  .button:disabled:hover {
-    background-color: var(--color-gray-300);
-    color: var(--color-gray-800);
-  }
 }

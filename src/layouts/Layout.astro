@@ -1,12 +1,12 @@
 ---
-import "../css/global.css";
+import '../css/global.css';
 interface Props {
   title: string;
 }
 
 const { title } = Astro.props;
 const description =
-  "20 years of crafting an elevated level of brands, web design and development.";
+  '20 years of crafting an elevated level of brands, web design and development.';
 ---
 
 <!doctype html>
@@ -45,12 +45,12 @@ const description =
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag("js", new Date());
+      gtag('js', new Date());
 
-      gtag("config", "G-1DNQEP0VP0");
+      gtag('config', 'G-1DNQEP0VP0');
     </script>
   </head>
-  <body>
+  <body class="bg-gray-500">
     <a href="#main" class="sr-only sr-only-focusable">Skip to content</a>
     <slot />
   </body>

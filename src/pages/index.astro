@@ -1,22 +1,20 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import { Picture } from "astro:assets";
+import Layout from '../layouts/Layout.astro';
+import { Picture } from 'astro:assets';
 
 const date = new Date().getFullYear();
 
-import amazingWork01 from "../assets/hackettstown-nj-single-page-marketing-site-limited-availability-01.png";
-import amazingWork02 from "../assets/hackettstown-nj-single-page-marketing-site-limited-availability-04.png";
-import amazingWork03 from "../assets/hackettstown-nj-single-page-marketing-site-limited-availability-05.png";
-import caseStudy from "../assets/hackettstown-nj-single-page-marketing-site-limited-availability-case-study-01.png";
-import headshot from "../assets/headshot-01.jpg";
+import amazingWork01 from '../assets/inclusive-accessible-marketing-website-design-01.png';
+import amazingWork02 from '../assets/inclusive-accessible-marketing-website-design-02.png';
+import amazingWork03 from '../assets/inclusive-accessible-marketing-website-design-03.png';
+import caseStudy from '../assets/hackettstown-nj-single-page-marketing-site-limited-availability-case-study-01.png';
+import headshot from '../assets/headshot-01.jpg';
 ---
 
-<Layout
-  title="Hoverboard Media // 20 years of elevated branding and web design"
->
+<Layout title="20 years of elevated branding and web design">
   <header
     id="hero"
-    class="bg-gradient bg-gradient-to-tr from-mint-vivid-300 to-blue-vivid-200 text-mint-vivid-900"
+    class="cover bg-gradient bg-gradient-to-tl from-mint-vivid-300 to-mint-vivid-200 text-mint-vivid-900"
   >
     <nav
       class="cluster box text-center justify-between bg-transparent text-white"
@@ -52,137 +50,101 @@ import headshot from "../assets/headshot-01.jpg";
         </svg>
       </a>
     </nav>
-    <div class="wrapper flex flex-col justify-center bg-transparent" id="main">
-      <h1
-        class="uppercase tracking-tighter text-step-3 sm:text-step-4 font-extrabold md:text-[5.5vw] md:text-nowrap"
-      >
-        Hackettstown Limited Offer
-      </h1>
-      <div class="grid" data-layout="50-50">
-        <div>
-          <h2>
-            Get your small business a high quality single-page marketing website
-            <strong>for $500</strong>, <strong>live in a few days</strong>.
-          </h2>
-          <h3><em>No contacts, no BS, just excellent websites.</em></h3>
-        </div>
-        <div
-          class="flex flex-col flow prose justify-center items-center text-center"
-        >
-          <h4 class="text-step-1 font-bold">
-            A website that <span id="benefits"
-              >will look good on any device.</span
-            >
-          </h4>
-        </div>
-      </div>
-    </div>
-    <div
-      class="flex flex-col flow md:grid region overflow-clip"
-      data-layout="twelfths"
+    <h1
+      class="uppercase tracking-tight font-black text-[15vw] md:text-[10vw] lg:text-[8vw] mt-zero leading-tight"
     >
-      <Picture
-        src={amazingWork01}
-        widths={[300, 800, 2000, amazingWork01.width]}
-        sizes={`(max-width: 300px) 300px, (max-width: 800px) 800px, (max-width: 1600px) 2000px, ${amazingWork01.width}px`}
-        pictureAttributes={{
-          class:
-            "object-contain h-full w-full md:row-start-1 md:row-span-6 md:col-start-4 md:col-span-6 z-10 rotate-2 md:rotate-0 will-change-transform transition duration-300 ease-in-out hover:scale-105 hover:rotate-1",
-        }}
-        class={"object-contain h-full w-full md:row-start-1 md:row-span-6 md:col-start-4 md:col-span-6 z-10 rotate-2 md:rotate-0 will-change-transform transition duration-300 ease-in-out hover:scale-105 hover:rotate-1"}
-        alt="Local area franchisee website design"
-        formats={["avif", "webp"]}
-        decoding="sync"
-        loading="eager"
-      />
-      <Picture
-        src={amazingWork02}
-        widths={[300, 800, 2000, amazingWork02.width]}
-        sizes={`(max-width: 300px) 300px, (max-width: 800px) 800px, (max-width: 1600px) 2000px, ${amazingWork02.width}px`}
-        pictureAttributes={{
-          class:
-            "object-contain h-full w-full md:row-start-2 md:row-span-5 md:col-start-1 md:col-span-5 -rotate-2 will-change-transform transition duration-300 ease-in-out hover:scale-105 hover:-rotate-1",
-        }}
-        class={"object-contain h-full w-full md:row-start-2 md:row-span-5 md:col-start-1 md:col-span-5 -rotate-2 will-change-transform transition duration-300 ease-in-out hover:scale-105 hover:-rotate-1"}
-        alt="Local area franchisee website design"
-        formats={["avif", "webp"]}
-        decoding="sync"
-        loading="eager"
-      />
-      <Picture
-        src={amazingWork03}
-        widths={[300, 800, 2000, amazingWork03.width]}
-        sizes={`(max-width: 300px) 300px, (max-width: 800px) 800px, (max-width: 1600px) 2000px, ${amazingWork03.width}px`}
-        pictureAttributes={{
-          class:
-            "object-contain h-full w-full md:row-start-2 md:row-span-5 md:col-start-8 md:col-span-5 rotate-2 will-change-transform transition duration-300 ease-in-out hover:scale-105 hover:rotate-1",
-        }}
-        class={"object-contain h-full w-full md:row-start-2 md:row-span-5 md:col-start-8 md:col-span-5 rotate-2 will-change-transform transition duration-300 ease-in-out hover:scale-105 hover:rotate-1"}
-        alt="Local area franchisee website design"
-        formats={["avif", "webp"]}
-        decoding="sync"
-        loading="eager"
-      />
-    </div>
+      Inclusive web design for brands that care
+    </h1>
   </header>
-  <article>
+  <section
+    class="flex flex-col flow -mt-2xl md:-mt-3xl md:grid region pt-zero overflow-x-clip"
+    data-layout="twelfths"
+  >
+    <Picture
+      src={amazingWork03}
+      widths={[300, 800, 2000, amazingWork03.width]}
+      sizes={`(max-width: 300px) 300px, (max-width: 800px) 800px, (max-width: 1600px) 2000px, ${amazingWork03.width}px`}
+      pictureAttributes={{
+        class:
+          'object-contain h-full w-full md:row-start-1 md:row-span-6 md:col-start-4 md:col-span-6 z-10 rotate-2 md:rotate-0 will-change-transform transition duration-300 ease-in-out hover:scale-105 hover:rotate-1',
+      }}
+      class={'object-contain h-full w-full md:row-start-1 md:row-span-6 md:col-start-4 md:col-span-6 z-10 rotate-2 md:rotate-0 will-change-transform transition duration-300 ease-in-out hover:scale-105 hover:rotate-1'}
+      alt="Accessible inclusive design"
+      formats={['avif', 'webp']}
+      decoding="sync"
+      loading="eager"
+    />
+    <Picture
+      src={amazingWork02}
+      widths={[300, 800, 2000, amazingWork02.width]}
+      sizes={`(max-width: 300px) 300px, (max-width: 800px) 800px, (max-width: 1600px) 2000px, ${amazingWork02.width}px`}
+      pictureAttributes={{
+        class:
+          'object-contain h-full w-full md:row-start-2 md:row-span-5 md:col-start-1 md:col-span-5 -rotate-2 will-change-transform transition duration-300 ease-in-out hover:scale-105 hover:-rotate-1',
+      }}
+      class={'object-contain h-full w-full md:row-start-2 md:row-span-5 md:col-start-1 md:col-span-5 -rotate-2 will-change-transform transition duration-300 ease-in-out hover:scale-105 hover:-rotate-1'}
+      alt="B2C inclusive design"
+      formats={['avif', 'webp']}
+      decoding="sync"
+      loading="eager"
+    />
+    <Picture
+      src={amazingWork01}
+      widths={[300, 800, 2000, amazingWork01.width]}
+      sizes={`(max-width: 300px) 300px, (max-width: 800px) 800px, (max-width: 1600px) 2000px, ${amazingWork01.width}px`}
+      pictureAttributes={{
+        class:
+          'object-contain h-full w-full md:row-start-2 md:row-span-5 md:col-start-8 md:col-span-5 rotate-2 will-change-transform transition duration-300 ease-in-out hover:scale-105 hover:rotate-1',
+      }}
+      class={'object-contain h-full w-full md:row-start-2 md:row-span-5 md:col-start-8 md:col-span-5 rotate-2 will-change-transform transition duration-300 ease-in-out hover:scale-105 hover:rotate-1'}
+      alt="Ice cream franchise inclusive design"
+      formats={['avif', 'webp']}
+      decoding="sync"
+      loading="eager"
+    />
+  </section>
+  <article id="main">
     <section>
-      <div class="grid" data-layout="50-50" style="--gutter: 0;">
+      <div class="wrapper">
         <div
-          class="box flow prose flex flex-col justify-center text-blue-900 bg-blue-vivid-100 region"
+          class="box flow prose flex flex-col justify-center text-blue-900 region"
         >
-          <h2 class="mt-zero uppercase tracking-tighter font-extrabold">
-            What's the catch?
-          </h2>
-          <ul>
-            <li>
-              <strong>This is for our community</strong>. <br /> Hackettstown and
-              nearby towns only.
-            </li>
-            <li>
-              <strong>There is limited availability</strong>. <br /> I'll only be
-              doing this for four businesses.
-            </li>
-            <li>
-              <strong>This is a limited time offer</strong>. <br /> I'll only be
-              accepting applicants from 1/31 until 4/6
-            </li>
-            <li>
-              <strong>Hosting for one year</strong>. <br /> After that, it's $5 a
-              month, or $50 a year
-            </li>
-            <li>Credit card payments, only</li>
-          </ul>
-        </div>
-        <div
-          class="box flow prose flex flex-col justify-center text-indigo-900 bg-indigo-vivid-100 region"
-        >
-          <h2 class="mt-zero uppercase tracking-tighter font-extrabold">
-            What will I get?
-          </h2>
-          <ul>
-            <li>
-              A fully custom single-page website. Not some cookie cutter
-              template.
-            </li>
-            <li>
-              Distinct call to action via phone number, contact form, or Stripe
-              payment links.
-            </li>
-            <li>
-              Documentation. Everything we do will be neatly documented for your
-              records.
-            </li>
-            <li>Full access to the design, and code.</li>
-            <li>Premium stock photography.</li>
-          </ul>
+          <h2 class="mt-zero uppercase">What's an inclusive website?</h2>
+          <p>
+            Inclusive websites follow standard web practices. They are highly
+            accessible, readable, and usable.
+          </p>
+          <p>
+            After 20 years of web design, we know what makes sites timeless. A
+            focus on the core fundamentals of web designs, and a measured look
+            at the brand and their ideal audience. Here are the three principals
+            that shape our designs to bring our customers brands alive.
+          </p>
+          <h3>Appropriate</h3>
+          <p>
+            Appropriate invokes feeling. For example, a design would be
+            appropriate in form and function when it's bold and dynamic for a
+            sports brand. Clients either have a strong sense of what their brand
+            and ideal audience is, or we have discovery sessions to do a deep
+            dive to learn.
+          </p>
+          <h3>Distinctive</h3>
+          <p>
+            Distinctive is memorable. Something to persist in your mind. The
+            opposite of ordinary &mdash; not generic.
+          </p>
+          <h3>Simple</h3>
+          <p>
+            Simplicity is the pursuit of reduction. Through refining we make
+            designs less complicated. We remove all extreneous details and
+            decorations. We stick with everything necessary for our ideal
+            clients to be informed, and provide them with a way to take action.
+          </p>
         </div>
       </div>
     </section>
     <section class="flow prose bg-magenta-100 region">
-      <h2 class="mt-zero wrapper uppercase tracking-tighter font-extrabold">
-        Case Study
-      </h2>
+      <h2 class="mt-zero wrapper uppercase">Case Study</h2>
       <div class="flex flex-col flow md:grid" data-layout="twelfths">
         <Picture
           src={caseStudy}
@@ -190,11 +152,11 @@ import headshot from "../assets/headshot-01.jpg";
           sizes={`(max-width: 300px) 300px, (max-width: 800px) 800px, (max-width: 1600px) 2000px, ${caseStudy.width}px`}
           pictureAttributes={{
             class:
-              "object-contain h-full w-full md:row-start-1 md:row-span-10 md:col-start-7 md:col-span-6 z-10",
+              'object-contain h-full w-full md:row-start-1 md:row-span-10 md:col-start-7 md:col-span-6 z-10',
           }}
-          class={"object-contain h-full w-full md:row-start-1 md:row-span-10 md:col-start-7 md:col-span-6 z-10"}
+          class={'object-contain h-full w-full md:row-start-1 md:row-span-10 md:col-start-7 md:col-span-6 z-10'}
           alt="Local area franchisee website design"
-          formats={["avif", "webp"]}
+          formats={['avif', 'webp']}
           loading="lazy"
         />
         <div
@@ -203,9 +165,7 @@ import headshot from "../assets/headshot-01.jpg";
           <div
             class="box prose flow bg-white border-solid border-8 border-magenta-200 md:pr-4xl"
           >
-            <h3 class="mt-zero uppercase tracking-tighter font-extrabold">
-              Ice Cream Plano
-            </h3>
+            <h3 class="mt-zero uppercase">Ice Cream Plano</h3>
             <p>
               A franchisee reached out to us looking to bring in more customers.
               We built a quick website using the existing photography, and brand
@@ -232,9 +192,7 @@ import headshot from "../assets/headshot-01.jpg";
             class="md:row-start-1 md:row-span-8 md:col-start-1 md:col-span-6 z-10"
           >
             <div class="box flow prose bg-orange-vivid-900 text-orange-200">
-              <h2 class="mt-zero uppercase tracking-tighter font-extrabold">
-                Why are you doing this?
-              </h2>
+              <h2 class="mt-zero uppercase">Why are you doing this?</h2>
               <p>
                 I started my career working at small businesses. I have an
                 affinity for them, and love talking to owners about their
@@ -302,9 +260,7 @@ import headshot from "../assets/headshot-01.jpg";
     >
       <div class="center region">
         <div class="box flow prose bg-blue-vivid-900 text-blue-100">
-          <h2 class="mt-zero uppercase tracking-tighter font-extrabold">
-            Questions?
-          </h2>
+          <h2 class="mt-zero uppercase">Questions?</h2>
           <p>
             Feel free to reach out. Let me know if you prefer email, a call or
             text!
@@ -447,9 +403,9 @@ import headshot from "../assets/headshot-01.jpg";
   </footer>
 </Layout>
 <script>
-  import Typed from "typed.js";
-  const typed = new Typed("#benefits", {
-    strings: ["will stand the test of time.", "is accessible.", "is fast."],
+  import Typed from 'typed.js';
+  const typed = new Typed('#benefits', {
+    strings: ['will stand the test of time.', 'is accessible.', 'is fast.'],
     startDelay: 1500,
     showCursor: false,
     typeSpeed: 50,
@@ -457,10 +413,10 @@ import headshot from "../assets/headshot-01.jpg";
     backDelay: 2000,
   });
 
-  const formButton = document.getElementById("formSubmit") as HTMLButtonElement;
-  formButton.addEventListener("click", function () {
-    formButton.innerHTML = "Thank you for your submission";
+  const formButton = document.getElementById('formSubmit') as HTMLButtonElement;
+  formButton.addEventListener('click', function () {
+    formButton.innerHTML = 'Thank you for your submission';
     // Add disabled attribute to form button
-    formButton.setAttribute("disabled", "disabled");
+    formButton.setAttribute('disabled', 'disabled');
   });
 </script>
