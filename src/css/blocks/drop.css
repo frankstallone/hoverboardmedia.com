@@ -1,0 +1,3 @@
+.drop {
+  box-shadow: 0.313rem 0.313rem 0 0 var(--spot-color, var(--color-gray-1400));
+}

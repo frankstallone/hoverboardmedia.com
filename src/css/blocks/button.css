@@ -3,9 +3,9 @@
 .button {
   display: block;
   max-width: fit-content;
-  color: var(--color-blue-200);
-  background-color: var(--color-blue-vivid-800);
-  border: 2px solid var(--color-blue-vivid-900);
+  color: var(--color-indigo-900);
+  background-color: var(--color-indigo-vivid-200);
+  border: 2px solid var(--color-indigo-vivid-900);
   font-size: var(--size-step-1);
   font-weight: var(--font-bold);
   padding-block-start: var(--space-xs);
@@ -15,11 +15,11 @@
   text-decoration: none;
   text-align: center;
   border-radius: 9999px;
-  box-shadow: 0 8px 0 0 var(--color-blue-vivid-900);
-  transition: box-shadow 0.2s;
+  box-shadow: 0 8px 0 0 var(--color-indigo-vivid-900);
+  transition: box-shadow var(--transition-movement);
 }
 .button:hover {
-  box-shadow: 0 0 0 0 var(--color-blue-vivid-900);
+  box-shadow: 0 0 0 0 var(--color-indigo-vivid-900);
 }
 .button:disabled {
   background-color: var(--color-gray-300);
