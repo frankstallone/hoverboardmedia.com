@@ -303,7 +303,7 @@ import headshot from '../assets/headshot-01.jpg';
   <section
     class="flow prose bg-magenta-100 text-magenta-900 border-b-4 border-b-magenta-vivid-900 region"
   >
-    <h2 class="mt-zero wrapper">Case Study</h2>
+    <h2 class="mt-zero wrapper">Case Study: Brand Alignment</h2>
     <div class="flex flex-col flow md:grid" data-layout="twelfths">
       <Picture
         src={caseStudy}
@@ -480,22 +480,3 @@ import headshot from '../assets/headshot-01.jpg';
     </ul>
   </section>
 </footer>
-
-<script>
-  import Typed from 'typed.js';
-  const typed = new Typed('#benefits', {
-    strings: ['will stand the test of time.', 'is accessible.', 'is fast.'],
-    startDelay: 1500,
-    showCursor: false,
-    typeSpeed: 50,
-    backSpeed: 40,
-    backDelay: 2000,
-  });
-
-  const formButton = document.getElementById('formSubmit') as HTMLButtonElement;
-  formButton.addEventListener('click', function () {
-    formButton.innerHTML = 'Thank you for your submission';
-    // Add disabled attribute to form button
-    formButton.setAttribute('disabled', 'disabled');
-  });
-</script>
