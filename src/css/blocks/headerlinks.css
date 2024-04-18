@@ -1,0 +1,15 @@
+/* Main navigation buttons */
+.header-links a {
+  display: inline-block;
+  color: var(--color-mint-vivid-900);
+  text-decoration: none;
+  font-weight: var(--font-bold);
+}
+
+.header-links a:hover,
+.header-links a:focus,
+.header-links a:active {
+  color: var(--color-mint-vivid-800);
+  text-decoration: underline;
+  text-decoration-thickness: max(0.15em, 1px);
+}
