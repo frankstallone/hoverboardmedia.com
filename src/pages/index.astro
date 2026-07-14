@@ -10,6 +10,7 @@ import amazingWork03 from '../assets/inclusive-accessible-marketing-website-desi
 import caseStudy01 from '../assets/marketing-brand-transformation-case-study-01.png';
 import caseStudy02 from '../assets/marketing-brand-transformation-case-study-02.png';
 import Navigation from '../components/navigation.astro';
+import ContactForm from '../components/contact-form.astro';
 ---
 
 <Layout title="20 years of elevated branding and web design">
@@ -364,89 +365,7 @@ import Navigation from '../components/navigation.astro';
         </div>
       </div>
     </section>
-    <section id="contact" class="bg-gray-300 border-b-4 border-b-gray-1200">
-      <div class="center region">
-        <div class="box flow prose">
-          <h2 class="mt-zero">Find out how we can help</h2>
-          <p>
-            If you have a question you'd like to know, and <a
-              href="https://tidycal.com/frankstallone/hoverboard"
-              target="_blank"
-              aria-label="booking a call - opens a new tab">booking a call</a
-            > isn't the most convenient, feel free to fill out this form. We'll get
-            back to you within a few days.
-          </p>
-          <form
-            name="main"
-            netlify-honeypot="bot-field"
-            class="switcher"
-            method="POST"
-            data-netlify="true"
-            action="/#contact"
-          >
-            <input
-              type="hidden"
-              name="subject"
-              value="Form: hoverboardmedia.com"
-            />
-            <p class="hidden">
-              <label for="bot-field">Do you like delicious treats?</label>
-              <input
-                name="bot-field"
-                id="bot-field"
-                class="border-gray-700 border-1 border-solid"
-              />
-            </p>
-            <span class="stack">
-              <label for="name">Name</label>
-              <input
-                id="name"
-                class="text-blue-1000"
-                name="name"
-                type="text"
-                required
-                aria-required="true"
-                class="border-gray-700 border-1 border-solid"
-              />
-            </span>
-            <span class="stack">
-              <label for="email">Email</label>
-              <input
-                id="email"
-                class="text-blue-1000"
-                name="email"
-                type="email"
-                required
-                aria-required="true"
-                class="border-gray-700 border-1 border-solid"
-              />
-            </span>
-            <span class="stack">
-              <label for="tel">Phone number</label>
-              <input
-                id="tel"
-                class="text-blue-1000"
-                name="tel"
-                type="tel"
-                class="border-gray-700 border-1 border-solid"
-              />
-            </span>
-            <span class="stack">
-              <label for="message">Message</label>
-              <textarea
-                name="message"
-                id="message"
-                class="text-blue-1000"
-                rows="6"
-                required
-                aria-required="true"
-                class="border-gray-700 border-1 border-solid"></textarea>
-            </span>
-            <button type="submit" id="formSubmit" class="button">Submit</button>
-          </form>
-        </div>
-      </div>
-    </section>
+    <ContactForm />
   </article>
   <footer class="relative z-10 overflow-clip bg-gray-200">
     <section class="region wrapper flow z-10 relative">
