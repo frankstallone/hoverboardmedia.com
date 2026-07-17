@@ -34,45 +34,51 @@ import ContactForm from '../components/contact-form.astro';
   >
     <Picture
       src={amazingWork03}
-      widths={[300, 800, 2000, amazingWork03.width]}
-      sizes={`(max-width: 300px) 300px, (max-width: 800px) 800px, (max-width: 1600px) 2000px, ${amazingWork03.width}px`}
+      widths={[320, 480, 640, 800, 1280, 1600, 1920]}
+      sizes="(min-width: 760px) calc(50vw - 1rem), 100vw"
       pictureAttributes={{
         class:
           'object-contain h-full w-full md:row-start-1 md:row-span-6 md:col-start-4 md:col-span-6 z-10 rotate-2 md:rotate-0 will-change-transform transition duration-300 ease-in-out hover:scale-105 hover:rotate-1',
       }}
       class={'object-contain h-full w-full md:row-start-1 md:row-span-6 md:col-start-4 md:col-span-6 z-10 rotate-2 md:rotate-0 will-change-transform transition duration-300 ease-in-out hover:scale-105 hover:rotate-1'}
       alt="Accessible inclusive design"
-      formats={['avif', 'webp']}
-      decoding="sync"
+      formats={['avif']}
+      fallbackFormat="webp"
+      decoding="async"
       loading="eager"
+      fetchpriority="high"
     />
     <Picture
       src={amazingWork02}
-      widths={[300, 800, 2000, amazingWork02.width]}
-      sizes={`(max-width: 300px) 300px, (max-width: 800px) 800px, (max-width: 1600px) 2000px, ${amazingWork02.width}px`}
+      widths={[320, 480, 640, 800, 1280, 1600]}
+      sizes="(min-width: 760px) calc(41.667vw - 1.5rem), 100vw"
       pictureAttributes={{
         class:
           'object-contain h-full w-full md:row-start-2 md:row-span-5 md:col-start-1 md:col-span-5 -rotate-2 will-change-transform transition duration-300 ease-in-out hover:scale-105 hover:-rotate-1',
       }}
       class={'object-contain h-full w-full md:row-start-2 md:row-span-5 md:col-start-1 md:col-span-5 -rotate-2 will-change-transform transition duration-300 ease-in-out hover:scale-105 hover:-rotate-1'}
       alt="B2C inclusive design"
-      formats={['avif', 'webp']}
-      decoding="sync"
-      loading="eager"
+      formats={['avif']}
+      fallbackFormat="webp"
+      decoding="async"
+      loading="lazy"
+      fetchpriority="low"
     />
     <Picture
       src={amazingWork01}
-      widths={[300, 800, 2000, amazingWork01.width]}
-      sizes={`(max-width: 300px) 300px, (max-width: 800px) 800px, (max-width: 1600px) 2000px, ${amazingWork01.width}px`}
+      widths={[320, 480, 640, 800, 1280, 1600]}
+      sizes="(min-width: 760px) calc(41.667vw - 1.5rem), 100vw"
       pictureAttributes={{
         class:
           'object-contain h-full w-full md:row-start-2 md:row-span-5 md:col-start-8 md:col-span-5 rotate-2 will-change-transform transition duration-300 ease-in-out hover:scale-105 hover:rotate-1',
       }}
       class={'object-contain h-full w-full md:row-start-2 md:row-span-5 md:col-start-8 md:col-span-5 rotate-2 will-change-transform transition duration-300 ease-in-out hover:scale-105 hover:rotate-1'}
       alt="Ice cream franchise inclusive design"
-      formats={['avif', 'webp']}
-      decoding="sync"
-      loading="eager"
+      formats={['avif']}
+      fallbackFormat="webp"
+      decoding="async"
+      loading="lazy"
+      fetchpriority="low"
     />
   </section>
   <main id="main" tabindex="-1">
@@ -273,15 +279,17 @@ import ContactForm from '../components/contact-form.astro';
       <div class="flex flex-col flow min-[990px]:grid" data-layout="twelfths">
         <Picture
           src={caseStudy01}
-          widths={[300, 800, 2000, caseStudy01.width]}
-          sizes={`(max-width: 300px) 300px, (max-width: 800px) 800px, (max-width: 1600px) 2000px, ${caseStudy01.width}px`}
+          widths={[320, 480, 640, 800, 1280, 1600, 1920]}
+          sizes="(min-width: 990px) calc(50vw - 1rem), 100vw"
           pictureAttributes={{
             class:
               'object-contain h-full w-full min-[990px]:row-start-1 min-[990px]:row-span-10 min-[990px]:col-start-7 min-[990px]:col-span-6 z-10',
           }}
           class={'object-contain h-full w-full min-[990px]:row-start-1 min-[990px]:row-span-10 min-[990px]:col-start-7 min-[990px]:col-span-6 z-10'}
           alt="Local area franchisee website design"
-          formats={['avif', 'webp']}
+          formats={['avif']}
+          fallbackFormat="webp"
+          decoding="async"
           loading="lazy"
         />
         <div
@@ -322,15 +330,17 @@ import ContactForm from '../components/contact-form.astro';
       <div class="flex flex-col flow min-[990px]:grid" data-layout="twelfths">
         <Picture
           src={caseStudy02}
-          widths={[300, 800, 2000, caseStudy02.width]}
-          sizes={`(max-width: 300px) 300px, (max-width: 800px) 800px, (max-width: 1600px) 2000px, ${caseStudy02.width}px`}
+          widths={[320, 480, 640, 800, 1280, 1600, 1920]}
+          sizes="(min-width: 990px) calc(50vw - 1rem), 100vw"
           pictureAttributes={{
             class:
               'object-contain h-full w-full min-[990px]:row-start-1 min-[990px]:row-span-10 min-[990px]:col-start-7 min-[990px]:col-span-6 z-10',
           }}
           class={'object-contain h-full w-full min-[990px]:row-start-1 min-[990px]:row-span-10 min-[990px]:col-start-7 min-[990px]:col-span-6 z-10'}
           alt="Brand evelvation for Loumarc Signs"
-          formats={['avif', 'webp']}
+          formats={['avif']}
+          fallbackFormat="webp"
+          decoding="async"
           loading="lazy"
         />
         <div
