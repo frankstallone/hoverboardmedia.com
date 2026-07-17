@@ -4,18 +4,20 @@ import Navigation from '../../components/navigation.astro';
 ---
 
 <Layout title="Thanks for reaching out — Hoverboard Media">
-  <main
-    id="main"
-    tabindex="-1"
+  <div
     class="cover bg-gradient bg-gradient-to-tl from-mint-vivid-300 to-mint-vivid-200 text-mint-vivid-900"
   >
-    <Navigation />
-    <div class="wrapper flow my-auto text-center flex flex-col items-center">
+    <header><Navigation /></header>
+    <main
+      id="main"
+      tabindex="-1"
+      class="wrapper flow my-auto text-center flex flex-col items-center"
+    >
       <h1 class="mt-zero text-step-5">Thanks for reaching out</h1>
       <p class="text-step-2 leading-fine">
         Your inquiry is on its way. We'll review it and reply within a few days.
       </p>
       <a class="button" href="/">Return to the homepage</a>
-    </div>
-  </main>
+    </main>
+  </div>
 </Layout>

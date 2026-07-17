@@ -1,6 +1,16 @@
 /* Main navigation buttons */
+.site-logo-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-inline-size: var(--tap-target-size);
+  min-block-size: var(--tap-target-size);
+}
+
 .header-links a {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  min-block-size: var(--tap-target-size);
   color: var(--color-mint-vivid-900);
   text-decoration: none;
   font-weight: var(--font-bold);
@@ -12,4 +22,10 @@
   color: var(--color-mint-vivid-800);
   text-decoration: underline;
   text-decoration-thickness: max(0.15em, 1px);
+}
+
+.footer-links a {
+  display: inline-flex;
+  align-items: center;
+  min-block-size: var(--tap-target-size);
 }

@@ -18,7 +18,8 @@
   box-shadow: 0 8px 0 0 var(--color-indigo-vivid-900);
   transition: box-shadow var(--transition-movement);
 }
-.button:hover {
+.button:hover,
+.button:active {
   box-shadow: 0 0 0 0 var(--color-indigo-vivid-900);
 }
 .button:disabled {
