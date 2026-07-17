@@ -4,16 +4,18 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="20 years of elevated branding and web design">
-  <header
+  <div
     id="hero"
     class="cover bg-gradient bg-gradient-to-tl from-mint-vivid-300 to-mint-vivid-200 text-mint-vivid-900"
   >
-    <Navigation />
-    <h1
-      class="tracking-tight font-black text-[15vw] md:text-[10vw] lg:text-[8vw] mt-zero leading-tight"
-    >
-      Whoops, how did we get here?
-    </h1>
-    <h2>This page doesn't exist, <a href="/">let's get you back!</a></h2>
-  </header>
+    <header><Navigation /></header>
+    <main id="main" tabindex="-1" class="my-auto">
+      <h1
+        class="tracking-tight font-black text-[15vw] md:text-[10vw] lg:text-[8vw] mt-zero leading-tight"
+      >
+        Whoops, how did we get here?
+      </h1>
+      <h2>This page doesn't exist, <a href="/">let's get you back!</a></h2>
+    </main>
+  </div>
 </Layout>

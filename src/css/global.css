@@ -22,6 +22,7 @@ Reference source: https://github.com/Set-Creative-Studio/cube-boilerplate/blob/m
 @import 'blocks/form.css' layer(components);
 @import 'blocks/headerlinks.css' layer(components);
 @import 'blocks/prose.css' layer(components);
+@import 'blocks/skip-link.css' layer(components);
 @import 'components/box.css' layer(components);
 @import 'components/center.css' layer(components);
 @import 'components/cluster.css' layer(components);

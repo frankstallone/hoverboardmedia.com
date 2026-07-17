@@ -1,0 +1,36 @@
+.skip-link {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link:focus-visible {
+  position: fixed;
+  inset-block-start: var(--space-xs);
+  inset-inline-start: var(--space-xs);
+  z-index: 50;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: var(--space-xs) var(--space-m);
+  overflow: visible;
+  clip: auto;
+  clip-path: none;
+  color: var(--color-indigo-900);
+  background-color: var(--color-indigo-vivid-200);
+  border: 2px solid var(--color-indigo-vivid-900);
+  box-shadow: 0 8px 0 var(--color-indigo-vivid-900);
+  font-size: var(--size-step-1);
+  font-weight: var(--font-bold);
+  outline: none;
+  text-decoration-thickness: max(0.08em, 1px);
+  text-underline-offset: 0.15em;
+  white-space: nowrap;
+}
